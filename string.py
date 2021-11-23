@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 23 02:43:10 2021
+
+@author: ELCOT
+"""
+
+W= input('Please enter a string ')
+def most_frequent(string):
+    d = dict()
+    for key in string:
+        if key not in d:
+            d[key] = 1
+        else:
+            d[key] += 1
+    return d
+
+print (most_frequent(W))
+
